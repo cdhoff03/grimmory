@@ -66,7 +66,7 @@ export class ReaderStyleService {
           html {
               color-scheme: light dark;
               color: ${theme.fg || theme.light.fg};
-              font-size: ${fontSize}px;
+              font-size: ${fontSize}px !important;
           }${fontFamilyRule}
           a:any-link {
               color: ${theme.link || theme.light.link};
