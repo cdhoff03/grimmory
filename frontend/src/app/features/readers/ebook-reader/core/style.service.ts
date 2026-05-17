@@ -67,6 +67,9 @@ export class ReaderStyleService {
               color-scheme: light dark;
               color: ${theme.fg || theme.light.fg};
               font-size: ${fontSize}px !important;
+          }
+          body {
+              font-size: 1rem !important;
           }${fontFamilyRule}
           a:any-link {
               color: ${theme.link || theme.light.link};
@@ -159,6 +162,7 @@ export class ReaderStyleService {
           line-height: ${lineHeight};
           text-align: ${justify ? 'justify' : 'start'} !important;
           hyphens: ${hyphenate ? 'auto' : 'none'};
+          font-size: 1em !important;
       }
       ${overrideFont ? '' : ''}
       ${userStylesheet}
